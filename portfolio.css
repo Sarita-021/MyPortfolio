@@ -1,0 +1,410 @@
+   
+   /* --------------------------------------universal css-------------------------------------------  */
+
+   body {
+    font-family: Varela Round , sans-serif ;
+    padding: 0;
+    text-align: center;
+}
+
+ul {
+    padding: 0;
+}
+
+li {
+    display: inline-block;
+    list-style: none;
+}
+
+h2  {
+    display: inline-block;
+    font-family: poppins , sans-serif;
+    font-size: 26pt;
+    padding: 30px 20px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    color: #fff;
+}
+/* ----------------------------------------------navbar css---------------------------------------------------  */
+
+#navbar {
+    background-color: white;
+    box-shadow: 0 2px 4px 0 rgba(87, 86, 86, 0.2);
+    padding: 5px 12%;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+.navbar .logo {
+    color: #1c1c6d;
+    font-family: poppins , sans-serif;
+    transition: 1s;
+}
+
+.navbar .logo:hover {
+    color: rgb(255, 155, 29);
+}
+
+/* -------------------------------------------------home css------------------------------------------------- */
+
+#home {
+    /* background-color: rgb(210, 252, 252); */
+    padding: 10% ;
+    text-align: left;
+    background-image: url("images/backgroundgif.gif");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+#home .row {
+    animation: first 2s linear;
+    background-color: rgba(10, 10, 10, 0.6);
+    padding: 5%;
+}
+
+@keyframes first {
+    0% {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+
+}
+
+#home .row h1 {
+    color: rgb(255, 255, 0);
+    font-family: Paytone One, sans-serif;
+    font-weight: bolder;
+    display: inline-block;
+}
+
+#home .row  h1 + span {
+    color: rgb(255, 115, 29);
+    font-family: Paytone One, sans-serif;
+    font-size: 32pt;
+    font-weight: bolder;
+}
+
+#home .row h4 {
+    color: rgb(192, 254, 252);
+}
+
+#home .row h4 .auto-type {
+    font-weight: bolder;
+    color: rgb(62, 219, 240);
+}
+
+#home .row .btn {
+    background-color: rgb(22, 22, 136);
+    border-radius: 15px;
+    box-shadow: 3px 10px 10px rgba(49, 4, 164, 0.5);
+    color: white;
+    font-weight: bold;
+    margin: 15px 0 10px;
+    padding: 5px 15px;
+    transition-duration: 1s;
+}
+
+#home .row .btn:hover {
+    background-color: rgb(221, 92, 13);
+    box-shadow: 3px 10px 10px rgba(164, 92, 4, 0.5);
+    color: rgb(230, 241, 244);
+}
+
+#home .row .social_icon a {
+    background-color: rgb(192, 254, 252);
+    border-radius: 50%;
+    color: rgb(7, 31, 86);
+    display: inline-block;
+    height: 40px;
+    margin: 20px 8px 20px 0;
+    padding: 7px 9px;
+    width: 40px;
+}
+
+#home .row .social_icon a:hover {
+    color: #AE00FB;
+}
+
+#home .row .photo {
+    text-align: center
+}
+
+#home img.myPhoto {
+    border-radius: 20% 20%;
+    box-shadow: 20px 20px rgba(58, 215, 236, 0.25);
+    position: relative;
+    transition: all .4s ease;
+    width: 300px;
+}
+
+#home img.myPhoto:hover {
+    border-radius: 50% 50% 50% 50% / 50% 5% 5% 50% ;
+    box-shadow: 10px 10px rgba(58, 215, 236, 0.25);
+} 
+
+/* --------------------------------------------about css-------------------------------------------  */
+
+#about, #education {
+   background-image: linear-gradient(white, rgb(195, 195, 227));
+   padding: 5%;
+}
+
+.about h2 + span , .education h2 + span {
+    color: purple ;
+    font-family: poppins , sans-serif;
+    font-size: 26pt;
+}
+
+.about .row h3 {
+    font-weight: bold;
+    padding-left: 0;
+}
+
+.about .row h3 + span {
+    font-size: 15px;
+    font-weight: bold;
+    margin: 10px 0;
+    padding: 0;
+}
+
+.about .row {
+    text-align: left;
+    padding: 30px 10%;
+}
+
+.about ul li{
+background-color: rgba(122, 136, 140, 0);
+}
+
+.about .row .detail  {
+    color: #00005C;
+    margin: 20px;
+}
+
+.about .row .detail a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* -----------------------------------------------skill css------------------------------------------ */
+
+#skills {
+    background-image: linear-gradient(rgb(57, 23, 132), rgb(12, 12, 83));
+    padding: 4% 6% 6%;
+}
+
+#skills h2 span {
+    color: #d9ef35 ;
+}
+
+#skills h2, #skills a {
+    color: white;
+}
+
+#skills .container {
+    background-color: rgba(37, 166, 231, 0.15);
+    padding: 4%;
+}
+
+#skills .container .boxskill {
+    background-color: rgb(0, 0, 0, 0.55);
+    box-sizing: border-box;
+    box-shadow: 2px 2px 4px 2px rgb(6, 6, 69);
+    color: white;
+    margin: 20px;
+    padding: 15px;
+    transition: transform 0.5s ease-in-out;
+    
+}
+
+.boxskill:hover , .project_box:hover  {
+    transform: scale(1.1);
+}
+
+/* ------------------------------------------------Education css-----------------------------------------------  */
+
+.education .school {
+    text-align: left;
+    padding: 5% 12%;
+}
+
+.education .school .card-title {
+    color: rgb(35, 35, 119) ;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+/* -----------------------------------------------Project section----------------------------------------------  */
+
+#projects {
+    background-image: linear-gradient(rgb(57, 23, 132), rgb(12, 12, 83));
+    padding: 4% 6% 6%;
+}
+
+#projects h2 span {
+    color: #d9ef35 ;
+}
+
+#projects h2, #projects a {
+    color: white;
+}
+
+#projects .container {
+    background-color: rgba(37, 166, 231, 0.15);
+    padding: 4%;
+}
+
+#projects .container .project_box {
+    background-color: rgb(0, 0, 0, 0.55);
+    box-sizing: border-box;
+    box-shadow: 2px 2px 4px 2px rgb(6, 6, 69);
+    color: white;
+    margin: 20px;
+    padding: 15px;
+    width: 12rem;
+    transition: transform 0.5s ease-in-out;
+}
+
+#projects .container .project_box img {
+    width: 10rem;
+    height: 9rem;
+    padding: 5px;
+}
+
+/* ----------------------------------------------------footer section----------------------------------------  */
+  
+.footer .box-container {
+    background-color: rgb(20, 20, 52);
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px 50px ;
+}
+
+.footer .box-container .box {
+    flex: 1 1 20rem;
+    padding: 20px 10px;
+    text-align: left;
+}
+.footer .box-container .box h4 {
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: normal;
+    padding-bottom: 1rem;
+}
+.footer .box-container .box p {
+    color: #ccc;
+    text-transform: none; 
+}
+
+.footer .credit {
+    border-top: 0.1rem solid #fff3;
+    color: #fff;
+    font-family: "Nunito", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin: auto;
+    width: 75%;
+}
+.footer .box-container .box a {
+    color: rgb(238, 238, 238);
+    display: block;
+    padding: 0.3rem 0;
+    text-decoration: none;
+}
+.footer .credit strong {
+    color: #ffae00;
+}
+
+.footer .box-container .box .share {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer .box-container .box .share a {
+    background: rgb(228, 231, 217);
+    border: none;
+    border-radius: 5rem;
+    color: #180566;
+    font-size: 1.2rem;
+    height: 2rem;
+    margin-right: 1rem;
+    text-align: center;
+    width: 2rem;
+}
+
+/* ---------------------------------------------- On Scroll Animation ----------------------------------------*/
+
+.hidden  {
+    opacity: 0;
+    transform: scale(0.2);
+    transition: all 1s ease-in-out;
+}
+
+.show {
+    opacity: 1;
+    transform: scale(1);
+    animation: slide 1.5s ease-in-out;
+}
+
+@keyframes slide {
+    0% {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    50% {
+        opacity: 0.25;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+}
+
+#projects .card:nth-child(1) {
+    animation-delay: 400ms;
+}
+
+#projects .card:nth-child(2) {
+    animation-delay: 600ms;
+}
+
+#projects .card:nth-child(3) {
+    animation-delay: 800ms;
+}
+
+
+#skills .card:nth-child(2) {
+    animation-delay: 100ms;
+}
+
+#skills .card:nth-child(3) {
+    animation-delay: 200ms;
+}
+
+#skills .card:nth-child(4) {
+    animation-delay: 300ms;
+}
+
+#skills .card:nth-child(5) {
+    animation-delay: 400ms;
+}
+
+#skills .card:nth-child(6) {
+    animation-delay: 500ms;
+}
+
+#skills .card:nth-child(8) {
+    animation-delay: 100ms;
+}
