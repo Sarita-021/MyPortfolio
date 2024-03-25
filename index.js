@@ -51,7 +51,7 @@ for (var i = 0; i < navlink.length; i++) {
 //    ---------------------------------------------type animation ---------------------------------------------------
 
 var typed = new Typed(".auto-type" , {
-    strings : ["Full Stack Web Developer." , "MERN Stack Web Developer"] ,
+    strings : ["AI & ML Enthusiast" , "MERN Stack Web Developer"] ,
     typeSpeed : 100 ,
     backSpeed : 100 ,
     loop : true 
